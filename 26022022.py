@@ -21,7 +21,10 @@ result = 1+1
 # value str = "string"
 
 
-value_str = "string"
-value_int = 13
-result = value_str + value_int
-print(result)
+# value_str = "string"
+# value_int = 13
+# result = value_str + value_int
+# print(result)
+
+value: str = 13
+print(value, type(value))
