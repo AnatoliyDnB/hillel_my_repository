@@ -26,5 +26,26 @@ result = 1+1
 # result = value_str + value_int
 # print(result)
 
-value: str = 13
-print(value, type(value))
+# value: str = 13
+# print(value, type(value))
+
+my_cool_str = "мій кльовий рядок111"
+my_cool_str_2 = 'ще літерки'
+my_cool_str_3 = '''А що так можно було!?!'''
+my_cool_str_4 = """та шо тут коється?!"""
+
+my_cool_str_5 = str(1)
+my_cool_str_6 = str(5.6)
+
+# print(my_cool_str)
+# print(my_cool_str_2)
+# print(my_cool_str_3)
+# print(my_cool_str_4)
+# print(my_cool_str_5, type(my_cool_str_5))
+# print(my_cool_str_6)
+
+# multiplication = my_cool_str_4 * 3
+# print(multiplication)
+
+sum = my_cool_str + "" + my_cool_str_3 + " " + my_cool_str_4
+print(sum)
