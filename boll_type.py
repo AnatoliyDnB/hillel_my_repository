@@ -19,7 +19,7 @@ print("5 = 5 is", right_result_1)
 right_result_2 = 5 >= 5
 print("5 >= 5 is", right_result_2)
 
-right_result_3 = 5 <= 5
+right_result_3 = 5 < 5
 print("5 <= 5 is", right_result_3)
 
 ##### 3 #####
