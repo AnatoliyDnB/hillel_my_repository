@@ -40,10 +40,15 @@
 #
 # finally:
 #     print("Done")
+#
+# try:
+#     result = 1 / 0
+#
+# finally:
+#     print("Done")
+#
+# symbol_1 = "+"
+# print(type(symbol_1))
 
-try:
-    result = 1 / 0
-
-finally:
-    print("Done")
-
+value_1 = float("10.1")
+print(value_1, type(value_1))
