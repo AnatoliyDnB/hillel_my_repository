@@ -159,12 +159,12 @@ print("loop is finished")
 # for el in range(5, -5, -2):
 #     print(el)
 # ####################################################
-# object_for_enumerate = "for-loop with break operator"
-# collector_letters = ""
-#
-# for index, element in enumerate(object_for_enumerate):
-#     print(f"{index=}|{element=}")
-#
-#     collector_letters += element
-#     if len(collector_letters) == 6:
-#         break
+object_for_enumerate = "for-loop with break operator"
+collector_letters = ""
+
+for index, element in enumerate(object_for_enumerate):
+    print(f"{index=}|{element=}")
+
+    collector_letters += element
+    if len(collector_letters) == 6:
+        break
