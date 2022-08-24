@@ -1,24 +1,32 @@
 some_symbols = input("Hey you! Write everything what you want=) :")
-certain_symbols = f"{some_symbols}"
-print(certain_symbols, type(certain_symbols))
 
-#####I fuckING hate this SHIT!
-for letter in certain_symbols:
+upper_letters = ""
+index_of_spaces = ""
+vowels_letters = ""
+counter = 0
 
-    if letter in "ABCDEFGQWRTYUIOPLKJHSZXVNM":
-        print(letter)
+for index, letter in enumerate(some_symbols):
+    if letter.isspace():
+        index_of_spaces += str(index) + ","
+
+    if letter.isupper():
+        upper_letters += letter
+
+    if letter in "aeiouyAEIOUY":
+        vowels_letters += letter
+
+    if letter.isdigit:
+        counter += 1
+        if counter == 3:
+            result = "Breaking cycle!!! Three digit sequence found"
+            break
+    if not letter.isdigit():
+        counter = 0
         continue
+else:
+    result = "The cycle is complete"
 
-    elif letter in "aAeEyYiIoO":
-        print(letter)
-        continue
-
-    # collector_letters = ""
-    # for index, element in enumerate(certain_symbols):
-    #
-    #     collector_letters += element
-    #     if element in " ":
-    #         print(f"{index=}|{element=}")
-
-
-print("fucking nice")
+print(f"{upper_letters=}")
+print(f"{index_of_spaces=}")
+print(f"{vowels_letters=}")
+print(result)

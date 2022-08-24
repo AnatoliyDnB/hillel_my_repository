@@ -130,22 +130,7 @@
 #     print("counter is not achieved")
 #
 # print("loop is finished")
-# ####################################################
-counter = 0
-iterable_object = "for-loop with break operator"
-
-for letter in iterable_object:
-    print(letter)
-    # counter += 1
-
-    if counter == 3:
-        print("counter achieved")
-        break
-
-else:
-    print("counter is not achieved")
-
-print("loop is finished")
+# ########################/
 # ####################################################
 # for el in range(5):  # stop parameter
 #     print(el)
@@ -159,12 +144,15 @@ print("loop is finished")
 # for el in range(5, -5, -2):
 #     print(el)
 # ####################################################
-object_for_enumerate = "for-loop with break operator"
+object_for_enumerate = "with break operator"
 collector_letters = ""
 
-for index, element in enumerate(object_for_enumerate):
-    print(f"{index=}|{element=}")
 
-    collector_letters += element
-    if len(collector_letters) == 6:
-        break
+for index, element in enumerate(object_for_enumerate):
+    if element.isspace():
+        collector_letters += element
+        print(f"{index}")
+
+    # collector_letters += element
+    # if len(collector_letters) == 6:
+    #     break
